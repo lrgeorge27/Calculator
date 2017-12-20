@@ -1,6 +1,8 @@
-.container-fluid {
+.bg-secondary {
     margin-top: 50px;
+    margin-left: 50px;
+    /*width: 25vw;*/
     padding: 10px;
     padding-left: 10px;
-    /*padding-right: 20px;*/
+    padding-right: 50px;
 }
