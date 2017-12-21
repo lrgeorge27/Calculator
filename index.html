@@ -6,90 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-kwkqQ7fZB5Z1oUZHYnI1NTELpNDXw1p2IoxBpi1QGzK62+u6LMHRBmD1ZzBxCoD+" crossorigin="anonymous">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-kwkqQ7fZB5Z1oUZHYnI1NTELpNDXw1p2IoxBpi1QGzK62+u6LMHRBmD1ZzBxCoD+" crossorigin="anonymous">-->
     <title>Calculator</title>
 </head>
 
 <body>
 
     <div class="container text-white bg-secondary">
-        <div class="row">
-            <div class="col-xs-1">
-                <button id="c" class="btn btn-primary btn-lg">C</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="ce" class="btn btn-primary btn-lg">CE</button>
-            </div>
-            <div class="col-xs-2">
-                <form id="display"><input></form>
-            </div>
+        <div id="clear">
+            <button id="c" class="btn btn-primary btn-lg">C</button>
+            <button id="ce" class="btn btn-primary btn-lg">CE</button>
         </div>
-        <div class="row">
-            <div class="col-xs-1">
-                <button id="9" class="btn btn-info btn-lg" value=9>9</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="8" class="btn btn-info btn-lg" value=8>8</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="7" class="btn btn-info btn-lg" value=7>7</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="divide" class="btn btn-danger btn-lg">/</button>
-            </div>
+        <h1 id="total" class="text-white"></h1>
+        <!--<div id="num">-->
+        <button id="btn" value="9" onclick="display()">9</button>
+        <button id="8" value="8" onclick="display()">8</button>
+        <button id="7" value="7" onclick="display()">7</button>
+
+
+        <!--</div>-->
+        <div id="operator">
+            <input type="button" value="+" />
+            <input type="button" value="-" />
+            <input type="button" value="*" />
+            <input type="button" value="/" />
+            <input type="button" value="=" />
+            <input type="button" value="." />
 
         </div>
-        <div class="row">
-            <div class="col-xs-1">
-                <button id="6" class="btn btn-warning btn-lg" value=6>6</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="5" class="btn btn-warning btn-lg" value=5>5</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="4" class="btn btn-warning btn-lg" value=4>4</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="multiply" class="btn btn-danger btn-lg">*</button>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-xs-1">
-                <button id="3" class="btn btn-info btn-lg" value=3>3</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="2" class="btn btn-info btn-lg" value=2>2</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="1" class="btn btn-info btn-lg" value=1>1</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="subtract" class="btn btn-danger btn-lg"> - </button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-1">
-                <button id="decimal" class="btn btn-success btn-lg">.</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="0" class="btn btn-warning btn-lg" value=0>0</button>
-
-            </div>
-            <div class="col-xs-1">
-                <button id="equals" class="btn btn-success btn-lg">=</button>
-            </div>
-            <div class="col-xs-1">
-                <button id="add" class="btn btn-danger btn-lg">+</button>
-            </div>
-        </div>
+        </form>
     </div>
 
 
 
     <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </body>
 
 </html>
