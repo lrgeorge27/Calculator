@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 
 <body>
@@ -20,15 +20,16 @@
         <input type="button" value="3" onclick="addNumber(3)" />
         <input type="button" value="2" onclick="addNumber(2)" />
         <input type="button" value="1" onclick="addNumber(1)" />
-        <input type="button" value="0" />
+        <input type="button" value="0" onclick="addNumber(0)" />
         <div id="operator">
-            <input type="button" value="+" />
-            <input type="button" value="-" />
-            <input type="button" value="*" />
-            <input type="button" value="/" />
-            <input type="button" value="=" />
+            <input type="button" value="+" onclick="operation('+')" />
+            <input type="button" value="-" onclick="operation('-')" />
+            <input type="button" value="*" onclick="operation('*')" />
+            <input type="button" value="/" onclick="operation('/')" />
+            <input type="button" value="=" onclick="equals()" />
             <input type="button" value="." onclick="addNumber(value)" />
-
+            <input type="button" value="C" onclick="c()" />
+            <input type="button" value="CE" onclick="clearAll()" />
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
