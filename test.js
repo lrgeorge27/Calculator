@@ -6,8 +6,8 @@ var total = "";
 var operator = "";
 
 function addNumber(id) {
-    console.log("click");
-    console.log(id);
+    // console.log("click");
+    // console.log(id);
     // var value = document.getElementById("9").value
     currentNum += id;
     console.log(currentNum);
@@ -34,19 +34,32 @@ function clearAll() {
 
 function operation(value) {
     console.log("click op");
-    operator = value;
-    memory = currentNum + operator;
-    currentNum = "";
-    dis.value = memory;
+    if (memory !== "") {
+        console.log("equals()");
+        equals();
+        operator = value;
+        // memory = total;
+        // dis.value = total;
+    }
+    else {
+        console.log("else");
+        operator = value;
+        memory = currentNum;
+        currentNum = "";
+        dis.value = memory;
+    }
     console.log(memory, operator);
 }
 
 function equals() {
     console.log("click =");
+    // memory.push(currentNum);
+    // for (var i = 0; i < memory.length; i++) {
+    console.log("memory", memory);
     if (operator === "+") {
         total = parseFloat(memory, 10) + parseFloat(currentNum, 10);
-        console.log(memory, currentNum);
-        console.log(total);
+        // console.log(memory);
+        console.log("total", total);
     }
     else if (operator === "-") {
         total = parseFloat(memory, 10) - parseFloat(currentNum, 10);
@@ -60,5 +73,9 @@ function equals() {
         total = parseFloat(memory, 10) / parseFloat(currentNum, 10);
         console.log(total);
     }
+    // }
+    memory = total;
+    currentNum = "";
+    operator = "";
     dis.value = total;
 }
