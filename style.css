@@ -8,6 +8,10 @@
     margin: 10px;
 }
 
+.jumbotron {
+    width: 300px;
+}
+
 #dis {
     font-size: 20px;
     margin: 0;
