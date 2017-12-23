@@ -8,11 +8,9 @@ var operator = "";
 function addNumber(id) {
     // console.log("click");
     // console.log(id);
-    // var value = document.getElementById("9").value
     currentNum += id;
     console.log(currentNum);
     dis.value = currentNum;
-    // console.log(currentNum.toString());
 }
 
 function c() {
@@ -54,11 +52,10 @@ function operation(value) {
 function equals() {
     console.log("click =");
     // memory.push(currentNum);
-    // for (var i = 0; i < memory.length; i++) {
+        // for (var i = 0; i < memory.length; i++) {
     console.log("memory", memory);
     if (operator === "+") {
         total = parseFloat(memory, 10) + parseFloat(currentNum, 10);
-        // console.log(memory);
         console.log("total", total);
     }
     else if (operator === "-") {

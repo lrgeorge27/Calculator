@@ -1,8 +1,14 @@
-.bg-secondary {
-    margin-top: 50px;
-    margin-left: 50px;
-    /*width: 25vw;*/
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 50px;
+.btn {
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+}
+
+.buttons {
+    margin: 10px;
+}
+
+#dis {
+    font-size: 20px;
+    margin: 0;
 }

@@ -5,33 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-kwkqQ7fZB5Z1oUZHYnI1NTELpNDXw1p2IoxBpi1QGzK62+u6LMHRBmD1ZzBxCoD+" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
     <title>Calculator</title>
 </head>
 
 <body>
-    <form id="calculator">
-        <input type="text" id="dis" class="text-right">
-        <input type="button" value="9" onclick="addNumber(9)" />
-        <input type="button" value="8" onclick="addNumber(8)" />
-        <input type="button" value="7" onclick="addNumber(7)" />
-        <input type="button" value="6" onclick="addNumber(6)" />
-        <input type="button" value="5" onclick="addNumber(5)" />
-        <input type="button" value="4" onclick="addNumber(4)" />
-        <input type="button" value="3" onclick="addNumber(3)" />
-        <input type="button" value="2" onclick="addNumber(2)" />
-        <input type="button" value="1" onclick="addNumber(1)" />
-        <input type="button" value="0" onclick="addNumber(0)" />
-        <div id="operator">
-            <input type="button" value="+" onclick="operation('+')" />
-            <input type="button" value="-" onclick="operation('-')" />
-            <input type="button" value="*" onclick="operation('*')" />
-            <input type="button" value="/" onclick="operation('/')" />
-            <input type="button" value="=" onclick="equals()" />
-            <input type="button" value="." onclick="addNumber(value)" />
-            <input type="button" value="C" onclick="c()" />
-            <input type="button" value="CE" onclick="clearAll()" />
-        </div>
-    </form>
+    <div class="container jumbotron">
+        <form id="calculator">
+            <input type="text" id="dis" class="text-right">
+            <br>
+            <div class="buttons">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <input type="button" value="9" class="btn btn-primary btn-lg" onclick="addNumber(9)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="8" class="btn btn-primary btn-lg" onclick="addNumber(8)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="7" class="btn btn-primary btn-lg" onclick="addNumber(7)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="+" class="btn btn-info btn-lg" onclick="operation('+')" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-1">
+                        <input type="button" value="6" class="btn btn-primary btn-lg" onclick="addNumber(6)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="5" class="btn btn-primary btn-lg" onclick="addNumber(5)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="4" class="btn btn-primary btn-lg" onclick="addNumber(4)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="-" class="btn btn-info btn-lg" onclick="operation('-')" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-1">
+                        <input type="button" value="3" class="btn btn-primary btn-lg" onclick="addNumber(3)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="2" class="btn btn-primary btn-lg" onclick="addNumber(2)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="1" class="btn btn-primary btn-lg" onclick="addNumber(1)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="*" class="btn btn-info btn-lg" onclick="operation('*')" />
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-1">
+                        <input type="button" value="." class="btn btn-info btn-lg" onclick="addNumber(value)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="0" class="btn btn-primary btn-lg" onclick="addNumber(0)" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="=" class="btn btn-info btn-lg" onclick="equals()" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="button" value="/" class="btn btn-info btn-lg" onclick="operation('/')" />
+                    </div>
+                </div>
+                <div id="operator">
+                    <div class="row">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-1">
+                            <input type="button" value="C" class="btn btn-success btn-lg" onclick="c()" />
+                        </div>
+                        <div class="col-xs-1">
+                            <input type="button" value="CE" class="btn btn-success btn-lg" onclick="clearAll()" />
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="test.js"></script>
 
